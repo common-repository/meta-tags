@@ -1,0 +1,179 @@
+
+/* Dismiss button */
+ 
+.dpmt-dismiss-forever{
+    float: right;
+    text-align: right;
+}
+
+.dpmt-dismiss-forever a{
+    text-decoration: none;
+}
+
+.dpmt-dismiss-forever a:hover .dashicons,
+.dpmt-dismiss-forever a:hover{
+    color: red;
+}
+
+
+
+
+/* Meta tags admin page */
+
+.dpmt-table{
+    padding-bottom: 30px;
+}
+
+.dpmt-table h1{
+    margin-bottom: 30px;
+}
+
+
+
+
+/* Icons in table */
+
+.dpmt-table .dashicons-editor-help{
+    cursor: help;
+    position: relative;
+}
+
+.dpmt-table .dashicons-editor-help:after{
+    content: attr(data-tip);
+    font-size: 13px;
+    font-family: sans-serif;
+    line-height: 20px;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    background: rgba(10, 20, 30, 0.85);        
+    padding: 0.5em;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+    max-width: 200px;    
+    text-align: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: all .3s ease-in-out;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+    right: 100%;
+    min-width: 100px;
+    z-index: 10;
+}
+
+.dpmt-table table tbody .dashicons-editor-help:after{
+    right: auto;
+}
+
+
+.dpmt-table .dashicons-editor-help:hover:after {
+    visibility: visible;
+    opacity: 1
+}
+
+
+
+.dpmt-table .dashicons-warning{
+    cursor: help;
+    position: relative;
+    line-height: 30px;
+    color: #ca4a1f;
+}
+
+.dpmt-table .dashicons-warning:after{
+    content: attr(data-tip);
+    font-size: 13px;
+    font-family: sans-serif;
+    line-height: 20px;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    background: rgba(10, 20, 30, 0.85);        
+    padding: 0.5em;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+    max-width: 200px;    
+    text-align: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: all .3s ease-in-out;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+    right: 100%;
+    min-width: 100px;
+}
+
+.dpmt-table table tbody .dashicons-warningp:after{
+    right: auto;
+}
+
+
+.dpmt-table .dashicons-warning:hover:after {
+    visibility: visible;
+    opacity: 1
+}
+
+
+
+
+
+
+/* Table */
+
+.dpmt-hidden{
+    display: none;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    background-color: #fff;
+}
+
+.dpmt-table table{
+    min-width: 820px;   
+}
+
+.dpmt-table table tbody tr:hover{
+    background-color: #ecf7f9;
+}
+
+
+.dpmt-table .widefat tfoot td input{
+    margin-left: 0px;
+    vertical-align: middle;
+    margin-right: 4px;
+}
+
+
+
+/* Tag editor form */
+
+.dpmt-editor .wp-heading-inline .info{
+    color: #666;
+    font-style: italic;
+    font-size: 18px;
+    display: table-caption;
+    white-space: nowrap;
+}
+
+.dpmt-editor .regular-text {
+    width: 40em;
+}
+
+
+
+
+/* Responsive tunings */
+
+@media only screen and (max-width: 783px) { 
+    .dpmt-table .table-holder{
+        width: 100%;
+        overflow: auto;
+    }
+}
+
+
+@media only screen and (max-width: 980px) { 
+    .dpmt-table .nav-tab{
+        border: 1px solid #ccc;
+        margin-right: 15px;
+        margin-bottom: 15px;
+    }
+}
